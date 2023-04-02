@@ -4,12 +4,16 @@
 
 Set up a modern Python project by running one command. (The missing [Create React App](https://github.com/facebook/create-react-app) for Python)
 
-Create Python projects with the best devepment workflow and configurations.
+Create Python projects with the best development tools and configurations.
 
 - [Creating a Project](#creating-a-project) – How to create a new project.
 
 Create Python Project works on macOS, Windows, and Linux.<br>
 If something doesn’t work, please [file an issue](https://github.com/wiresv/create-python-proj/issues/new).<br>
+
+This is the best Python workflow setup, and you deserve the best.
+
+> "A customer can have a car painted any colour he wants as long as it's black."
 
 ## Quick Overview
 
@@ -17,21 +21,22 @@ If something doesn’t work, please [file an issue](https://github.com/wiresv/cr
 pipx install create-python-proj
 create-python-proj
 cd my-proj
-poetry shell && poetry run my-proj
+poetry shell
+poetry run my-proj
 ```
 
-If you've previously installed `create-python-proj` via `pipx install create-python-proj`, we recommend you run `pipx upgrade create-python-proj` to ensure that pipx always uses the latest version.
+If you've previously installed `create-python-proj` via `pipx install create-python-proj`, we recommend you run `pipx upgrade create-python-proj` to ensure that you are always using the latest version.
 
 ### Get Started Immediately
 
-You **don’t** need to install or configure tools like Poetry, flake8, or mypy.
+You **don’t** need to manually install or configure tools like Poetry, flake8, or mypy.
 They are preconfigured and hidden so that you can focus on the code.
 
-Create a project, and you’re good to go.
+Create a project with the best setup, and you’re good to go.
 
 ## Creating a Project
 
-This package automates the process of creating a new Python project managed using [**Poetry**](https://python-poetry.org/docs/). It sets up the project structure, initializes a Git repository, configures the best development tools: [**mypy**](https://python-poetry.org/docs/), [**black**](https://github.com/psf/black), [**flake8**](https://github.com/PyCQA/flake8), [**isort**](https://pycqa.github.io/isort/), [**pytest**](https://docs.pytest.org/), and [**pytest-sugar**](https://github.com/Teemu/pytest-sugar/), and adds basic configurations for these tools.
+This package automates the process of creating a new Python project managed using [**Poetry**](https://python-poetry.org/docs/). It sets up the project structure, initializes a Git repository, configures the best development tools: [**mypy**](https://python-poetry.org/docs/), [**black**](https://github.com/psf/black), [**flake8**](https://github.com/PyCQA/flake8), [**isort**](https://pycqa.github.io/isort/), [**pytest**](https://docs.pytest.org/), and [**pytest-sugar**](https://github.com/Teemu/pytest-sugar/), and adds the best configurations for these tools.
 
 To create a new project, simply install using `pipx`:
 

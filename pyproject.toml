@@ -1,6 +1,6 @@
 [project]
 name = "create-python-proj-wiresv"
-version = "1.0.4"
+version = "1.0.5"
 authors = [{ name = "wiresv", email = "austinhwx@gmail.com" }]
 description = "Set up a modern Python project by running one command."
 readme = "README.md"
@@ -11,15 +11,16 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
-[project.urls]
-"Homepage" = "https://github.com/wiresv/create-python-proj"
+[tool.poetry.urls]
+"Source Code" = "https://github.com/wiresv/create-python-proj"
 
 [build-system]
 requires = ["setuptools", "wheel"]
 
 [tool.poetry]
 name = "create-python-proj"
-version = "1.0.4"
+version = "1.0.5"
+readme = "README.md"
 description = "Set up a modern Python project by running one command."
 authors = ["wiresv <austinhwx@gmail.com>"]
 license = "MIT"
