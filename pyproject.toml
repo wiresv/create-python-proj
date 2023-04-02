@@ -1,7 +1,7 @@
 [project]
 name = "create-python-proj-wiresv"
-version = "1.0.3"
-authors = [{ name = "wiresvr", email = "austinhwx@gmail.com" }]
+version = "1.0.4"
+authors = [{ name = "wiresv", email = "austinhwx@gmail.com" }]
 description = "Set up a modern Python project by running one command."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -12,17 +12,18 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
+"Homepage" = "https://github.com/wiresv/create-python-proj"
 
 [build-system]
 requires = ["setuptools", "wheel"]
 
 [tool.poetry]
 name = "create-python-proj"
-version = "1.0.3"
+version = "1.0.4"
 description = "Set up a modern Python project by running one command."
 authors = ["wiresv <austinhwx@gmail.com>"]
 license = "MIT"
+include = ["create_python_proj.sh"]
 
 [tool.poetry.scripts]
 create-python-proj = "create_python_proj.main:main"
