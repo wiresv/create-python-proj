@@ -3,7 +3,7 @@ import subprocess
 import sys
 
 
-def main():
+def main() -> None:
     script_path = os.path.join(
         os.path.dirname(os.path.abspath(__file__)),
         "..",
@@ -17,4 +17,5 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()
+    sys.exit()

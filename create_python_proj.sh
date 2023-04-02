@@ -46,8 +46,10 @@ ensure_newline_before_comments = true
 line_length = 88
 
 [tool.mypy]
-ignore_missing_imports = true # ignore missing type stubs of all imports
 strict = true
+follow_imports = "skip"       # replace with "silent" when implemented in dmypy
+ignore_missing_imports = true # ignore missing type stubs of all imports
+show_column_numbers = true
 
 [tool.pytest.ini_options]
 minversion = "6.0"
@@ -64,8 +66,12 @@ EOF
 
 # Create an example main.py file in the package directory
 cat > "$project_name/main.py" << EOF
-def hello_world():
+def hello_world() -> None:
     print("Hello, World!")
+
+
+def main() -> None:
+    hello_world()
 
 
 if __name__ == "__main__":
@@ -74,8 +80,13 @@ EOF
 
 # Create an example test_example.py file in the test directory
 cat > "tests/test_example.py" << EOF
+from $project_name import main
+
+
 def test_answer() -> None:
+    main.main()
     assert (1 + 1) == 2
+
 EOF
 
 # Update the README.md file with a starter template containing the package's name
