@@ -33,6 +33,9 @@ poetry add --group dev mypy black flake8 isort pytest pytest-sugar
 # Add configuration to pyproject.toml
 cat >> pyproject.toml << EOF
 
+[tool.poetry.scripts]
+$project_name = "$project_name.main:main"
+
 [tool.isort]
 profile = "black"
 multi_line_output = 3
